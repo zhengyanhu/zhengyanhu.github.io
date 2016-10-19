@@ -1,5 +1,4 @@
 <div class="weui_cells">
-  {{each list}}
   <a class="weui_cell" href="{{item.bookDetail}}" ng-repeat="item in data">
       <div class="weui_cell_hd">
         <img src="{{item.bookImg}}" alt="icon" style="width:100px;margin-right:5px;display:block">
@@ -12,7 +11,5 @@
           {{item.bookAuthor}}
           {{item.bookName}}
       </div>
-
     </a>
-  {{/each}}
 </div>
