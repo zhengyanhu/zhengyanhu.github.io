@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/lib/weui/weui.css">
-  <title>当当网热搜榜</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/lib/weui/weui.css">
+    <title>当当网热搜榜</title>
 </head>
+
 <body>
-<div ng-app="app" ng-controller="mainContoller">
-  <div ng-view>
+    <div ng-app="app" ng-controller="mainContoller">
 
-  </div>
-</div>
+        <div class="weui-tab__panel">
+             <div ng-view>
+
+             </div>
+        <div class="weui-tabbar">
+            <a href="#/" class="weui-tabbar__item weui-bar__item_on">
+                <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">首页</p>
+            </a>
+            <a href="#/blog" class="weui-tabbar__item">
+                <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">我的blog</p>
+            </a>
+            <a href="#/book" class="weui-tabbar__item">
+                <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">当当热销</p>
+            </a>
+            <a href="#/about_me" class="weui-tabbar__item">
+                <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">联系我</p>
+            </a>
+        </div>
+      </div>
+    </div>
 
 
-<script src="assets/lib/angular.js"></script>
-<script src="assets/lib/angular-route.js"></script>
-<script src="assets/app.js"></script>
-<script src="assets/api/service.js"></script>
-<script src="assets/controllers/main_controller.js"></script>
+    <script src="assets/lib/angular.js"></script>
+    <script src="assets/lib/angular-route.js"></script>
+    <script src="assets/app.js"></script>
+    <script src="assets/api/service.js"></script>
+    <script src="assets/controllers/main_controller.js"></script>
 </body>
+
 </html>
