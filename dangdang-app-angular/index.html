@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <div ng-app="app">
+    <div class="weui_tab" ng-app="app">
 
-        <div class="weui-tab__panel">
-             <div ng-view>
+             <div class="weui_tab_bd">
+               <div ng-view>
 
-             </div>
+               </div>
+            </div>
         <div class="weui-tabbar" style="position:fixed;bottom:0" ng-controller="mainContoller">
             <a href="#/" ng-click="linkTo(0)" class="weui-tabbar__item {{selectedIndex==0?'weui-bar__item_on':''}}">
                 <img src="./assets/images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
@@ -34,7 +35,6 @@
                 <img src="./assets/images/icon_nav_actionSheet.png" alt="" class="weui-tabbar__icon">
                 <p class="weui-tabbar__label">联系我</p>
             </a>
-        </div>
       </div>
     </div>
 
