@@ -1,5 +1,5 @@
 var app = angular.module('app',['ngRoute']);
-app.config('$routeProvider',function($routeProvider){
+app.config(['$routeProvider',function($routeProvider){
     $routeProvider
     .when('/',{
       templateUrl:'./assets/tpl/index.html',
@@ -21,4 +21,4 @@ app.config('$routeProvider',function($routeProvider){
       redirectTo:'/'
 
     })
-})
+}]);
