@@ -5,7 +5,7 @@ app.factory('commonService',['$http',function($http){
   //type 数据类型
   service.getData = function(type,callBack){
     $http({
-      url:'dangdang-angular/data/book_'+type+'.json',
+      url:'/dangdang-app-angular/data/book_'+type+'.json',
       method:'get'
     })
     .then(function(res){
