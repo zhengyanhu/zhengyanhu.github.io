@@ -4,6 +4,7 @@ app.factory('commonService',['$http',function($http){
   //根据分类信息取数据
   //type 数据类型
   service.getData = function(type,callBack){
+    console.log(type);
     $http({
       url:'/dangdang-app-angular/data/book_'+type+'.json',
       method:'get'
