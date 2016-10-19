@@ -1,7 +1,7 @@
-<div class="weui_cells">
-  <a class="weui_cell" href="{{item.bookDetail}}" ng-repeat="item in data">
+<div class="weui_cells" ng-repeat="item in data">
+  <a class="weui_cell" href="{{item.bookDetail}}">
       <div class="weui_cell_hd">
-        <img src="{{item.bookImg}}" alt="icon" style="width:100px;margin-right:5px;display:block">
+        <img ng-src="{{item.bookImg}}" alt="icon" style="width:100px;margin-right:5px;display:block">
       </div>
       <div class="weui_cell_bd weui_cell_primary">
         <p style="font-size:15px">{{item.issueTime}}</p>
