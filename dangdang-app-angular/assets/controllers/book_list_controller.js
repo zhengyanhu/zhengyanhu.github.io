@@ -2,6 +2,6 @@ app.controller('book_listController',['$scope','$routeParams','commonService',fu
  $scope.data = [];
  commonService.getData($routeParams.id,function(res){
    $scope.data = res.data.data;
-   console.log($scope.data);
+   console.log($routeParams.id);
  });
 }]);
