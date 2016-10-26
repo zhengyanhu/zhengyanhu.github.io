@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="images/1.png" />
+    <link rel="bookmark" href="images/1.png" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="author" content="郑延虎">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>demo</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/搜索.png" alt="搜索">
+        <input type="text" id="txt" placeholder="搜索商品名称">
+        <div class="div-bottom"></div>
+    </header>
+    <main>
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active advert">
+                    <img src="images/advert-1.jpg" alt="First slide">
+                </div>
+                <div class="item advert">
+                    <img src="images/advert-1.jpg" alt="Second slide">
+                </div>
+                <div class="item advert">
+                    <img src="images/advert-1.jpg" alt="Third slide">
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;
+ </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;
+ </a>
+        </div>
+        <div class="six">
+            <img src="images/div-1.png" alt="">
+            <img src="images/div-2.png" alt="">
+            <img src="images/div-3.jpg" alt="">
+            <img src="images/div-4.png" alt="">
+            <img src="images/div-5.jpg" alt="">
+            <img src="images/div-6.jpg" alt="">
+        </div>
+        <div class="product">
+
+        </div>
+        <div style="height:46px"></div>
+    </main>
+    <footer>
+        <div class="icons"><img src="images/01.png" alt="1">
+            <h6>首页</h6></div>
+        <div class="icons"><img src="images/02.png" alt="1">
+            <h6>购物车</h6></div>
+        <div class="icons"><img src="images/03.png" alt="1">
+            <h6>发现</h6></div>
+        <div class="icons"><img src="images/04.png" alt="1">
+            <h6>我</h6></div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+    <script src="js/javascript.js"></script>
+</body>
+
+
+</html>
