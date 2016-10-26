@@ -162,7 +162,7 @@ function title() {
         t1.html('求职');
         t2.html('前端工程师');
     }, function() {
-        t1.html('邓健燊');
+        t1.html('郑延虎');
         t2.html('个人简历');
     });
 }
