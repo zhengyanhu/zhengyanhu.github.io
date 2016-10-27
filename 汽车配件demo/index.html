@@ -1223,17 +1223,8 @@ $(document).ready(function(e) {
 				    </div>
           </div>
 
-		<script type="text/javascript">
-    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1255140323'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D1255140323' type='text/javascript'%3E%3C/script%3E"));</script>
-				<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?143cf8f0ee0c3b2804a98ae39d6177bc";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+
+	 
 
 
 
@@ -1255,36 +1246,8 @@ function(){
 			});
 		}
 	});
-	$("#modelsid").change(function(){
-		if($("#modelsid").val()!=""){
-			$.getJSON("/index.php?m=pjinfo&c=pjsy&modelsid="+$("#modelsid").val(),function(result){
-				if(result==0){$("#plid").hide();}
-				else{
-					$("#plid").show();
-					$('#plid').removeAttr("disabled");
-					$('#plid').empty();
-					var html = '<option value="">选择年款</option>';
-					$.each(result, function(i, field){
-						html += '<option value="'+field['id']+'">' + field['name']+'</option>';
-					});
-					$('#plid').html(html);
-				}
-			});
-		}
-	});
-	$("#pjtypeid").change(function(){
-		if($("#pjtypeid").val()!=""){
-			$.getJSON("/index.php?m=pjinfo&c=pjsy&pjtypeid="+$("#pjtypeid").val(),function(result){
-				$('#pjid').removeAttr("disabled");
-				$('#pjid').empty();
-				var html = '<option value="">选择配件子分类</option>';
-				$.each(result, function(i, field){
-					html += '<option value="'+field['id']+'">' + field['name']+'</option>';
-				});
-				$('#pjid').html(html);
-			});
-		}
-	});
+
+
 	$("#form1").submit(function(){
 		var typeid="0-0",modelsid=0,plid=0,pjtypeid=0,pjid=0;
 		if($("#typeid").val()!=""){typeid=$("#typeid").val()}
