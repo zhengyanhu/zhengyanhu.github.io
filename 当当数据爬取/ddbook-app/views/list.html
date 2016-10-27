@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="//cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+<link rel="stylesheet" href="/css/style.css">
+  <title>图书分类</title>
+</head>
+<body>
+
+
+<div class="weui_cells weui_cells_access">
+  {{each types}}
+ <a class="weui_cell" href="/users/ddd/{{$value.id}}">
+   <div class="weui_cell_hd">
+     <img src="{{$value.image}}" alt="icon" style="width:100px;margin-right:5px;display:block">
+   </div>
+   <div class="weui_cell_bd weui_cell_primary">
+     <p>{{$value.name}}</p>
+   </div>
+   <div class="weui_cell_ft">{{$value.explain}}</div>
+ </a>
+ {{/each}}
+</div>
+<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js"></script>
+
+</body>
+</html>
+

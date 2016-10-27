@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="//cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+<link rel="stylesheet" href="/css/style.css">
+  <title>图书详情</title>
+</head>
+<body>
+
+<header class='demos-header app-header'>
+    <h2 class="demos-title">{{title}}</h2>
+</header>
+
+
+<div class="weui_cells weui_cells_access">
+  {{each list}}
+  <a class="weui_cell" href="{{$value.bookDetail}}">
+      <div class="weui_cell_hd">
+        <img src="{{$value.bookImg}}" alt="icon" style="width:100px;margin-right:5px;display:block">
+      </div>
+      <div class="weui_cell_bd weui_cell_primary">
+        <p style="font-size:15px">{{$value.issueTime}}</p>
+        <p style="font-size:15px">{{$value.publish}}</p>
+      </div>
+      <div class="weui_cell_ft">
+          {{$value.bookAuthor}}
+          {{$value.bookName}}
+      </div>
+
+    </a>
+  {{/each}}
+</div>
+<!-- <script type="text/html" id="list"> -->
+
+<!-- </script> -->
+<!-- <script src="/lib/template.js"></script> -->
+<script src="//cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js"></script>
+
+</body>
+</html>
+
