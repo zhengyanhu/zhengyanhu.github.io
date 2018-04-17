@@ -61,4 +61,12 @@
     "confirm_password": "11111",
     "agree": "agree",
     "signup": "Sign up"
+}, {
+    "firstname": "郑",
+    "lastname": "延虎",
+    "username": "admin",
+    "email": "469277208@qq.com",
+    "password": "123123",
+    "confirm_password": "123123",
+    "agree": "agree"
 }]
