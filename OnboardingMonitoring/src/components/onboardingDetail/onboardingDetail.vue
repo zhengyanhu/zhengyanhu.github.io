@@ -63,7 +63,7 @@ export default {
     },
     methods:{
         navBtn:function(type){
-          //返回上一页面
+            //返回上一页面
             if( type === "left"){
                 this.$router.goBack();
             }
@@ -124,3 +124,70 @@ export default {
     }
 }
 </script>
+<style scoped lang="stylus" rel="stylesheet/stylus">
+.page
+    background-color: #f4f4f4;
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+    .content
+        flex-grow:1;
+        overflow:hidden;
+        .list_wrap
+            padding: 0.5rem;
+            font-size: .9rem;
+            .item:first-child
+                margin-top: 0;
+            .item
+                display: flex;
+                margin-top:.5rem;
+                .left_wrap
+                    height:2.3rem;
+                    line-height:2.3rem;
+                    background-color: #5094FF;
+                    flex-grow: .25;
+                    width:0;
+                    border-top-left-radius: .2rem;
+                    border-bottom-left-radius: .2rem;
+                    .title
+                        color:#fff;
+                        text-align:center;
+                .right_wrap
+                    flex-grow .75;
+                    width:0;
+                    background-color:#fff;
+                    padding: 0 .5rem 0 .5rem;
+                    border-top-right-radius: .2rem;
+                    border-bottom-right-radius: .2rem;
+                    border-bottom-left-radius: .2rem;
+                    box-shadow: .0665rem .0665rem .125rem .0665rem #ccc;
+                    .rw_top
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 2.3rem;
+                        line-height: 2.3rem;
+                        border-bottom: .0665rem dashed #E0E0E0;
+                        .top-txt1
+                            flex-grow:1;
+                            width:0;
+                            color: #4C7FD0;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow:hidden;
+                        .top-txt2
+                            background-color: #28d38d;
+                            color: #fff;
+                            height: 1.5rem;
+                            line-height: 1.5rem;
+                            padding: 0 .3rem 0 .3rem;
+                    .rw_bot
+                        padding-bottom: .3rem;
+                        .bot_1
+                            display: flex;
+                            margin-top: .3rem;
+                            .bot-txt1
+                                color: #B1B1B1;
+                                margin-right: .5rem;
+</style>
